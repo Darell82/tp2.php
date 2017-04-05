@@ -21,7 +21,7 @@
         <td><?= $client->birthdate ?></td>
         <td><?= $client->adresse.' '.$client->code_postal ?></td>
         <td><?= $client->telephone ?></td>
-        <td><?= $client->statusMarital ?></td>
+        <td><?= $client->statusmaritals ?></td>
 
     </tr>
 

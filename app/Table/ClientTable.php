@@ -36,4 +36,21 @@ class ClientTable extends Table
                              [$id]);
     }
 
+    public function findClient($id)
+        {
+            return $this->query(" SELECT clients.id,
+                                         clients.nom,
+                                         clients.prenom,
+                                         clients.birthdate,
+                                         clients.adresse,
+                                         clients.code_postal,
+                                         clients.telephone,
+                                         statusmaritals.status  as statusmaritals
+                                    FROM clients
+                                    LEFT JOIN statusmaritals
+                                           ON clients.statusMarital_id = statusmaritals.id
+                                    WHERE clients.id = ?
+                                ", [$id], true);
+        }
+
 }

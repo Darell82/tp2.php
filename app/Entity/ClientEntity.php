@@ -11,4 +11,8 @@ class ClientEntity extends Entity {
     public function getIdentite(){
         return strtoupper($this->nom).' '.ucfirst($this->prenom);
     } //met le nom en majuscule et la 1erer lettre du prenom
+public function getAge(){
+        return (int)((time()-strtotime($this->birthdate))/(60*60*24*365)).' ans';
+	}
+
 }

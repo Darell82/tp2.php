@@ -27,10 +27,9 @@
         <td><?= $client->telephone ?></td>
         <td><?= $client->statusmaritals ?></td>
 
-        <td><form action="admin.php?p=clients.detail" method="post">
-                <input type="hidden" name="id" value="<?= $client->id; ?>">
-                <input class="btn btn-primary" type="submit" name="" value="Détails">
-            </form>
+        <td>
+            <a class="btn btn-info btn-xs" href="admin.php?p=clients.detail&id=<?= $client->id ?>">Détail</a>
+        </td>
     </tr>
 
 

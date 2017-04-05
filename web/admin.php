@@ -40,6 +40,9 @@ if ($page==='home') {
 }
 elseif ($page==='clients') {
 	require ROOT.'/pages/admin/clients/index.php';
+	/////detail clients
+}elseif ($page==='clients.detail') {
+		require ROOT.'/pages/admin/clients/detail.php';
 
 
 }elseif ($page==='clients.add') {
