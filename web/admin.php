@@ -43,6 +43,11 @@ elseif ($page==='clients') {
 	/////detail clients
 }elseif ($page==='clients.detail') {
 		require ROOT.'/pages/admin/clients/detail.php';
+	/// delete clients
+
+}elseif ($page==='clients.delete') {
+		require ROOT.'/pages/admin/clients/delete.php';
+
 
 
 }elseif ($page==='clients.add') {
